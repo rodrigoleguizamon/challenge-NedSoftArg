@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('partials/head', {title: 'Inicio'}) %>
+<body>
+	<%- include('partials/header')%>
+	<!-- ultima visita -->
+	<div class="container products-wrapper">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="products-title">Basado en tu última visita</h2>
+			</div>
+			<!-- Show the "visited" products -->
+			<% visited.forEach(function (product) { %>
+				<%- include('partials/item', {product: product}) %>
+			<% }) %>
+		</div>
+	</div>
+	<!-- /ultima visita -->
+
+	<!-- Ofertas -->
+	<div class="container products-wrapper">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="products-title">Ofertas</h2>
+			</div>
+			<!-- Show the "in-sale" products -->
+			<% inSale.forEach(function (product) { %>
+				<%- include('partials/item', {product: product}) %>
+			<% }) %>
+		</div>
+	</div>
+	<!-- /Ofertas -->
+</body>	
+</html>
