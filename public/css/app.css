@@ -72,11 +72,16 @@
   }
 
   /*====== NavBar ======*/
-
-  .navbar-logo{
-    height: 75px; 
-    width: 150px
+  .navbar{
+    flex-wrap: wrap;
+    background-color:var(--light-gray);
+    width: 100%;
   }
+  .navbar-logo{
+    height: 50px; 
+    width: 125px
+  }
+
 
   
   
@@ -226,3 +231,46 @@
     margin-bottom: 15px;
   }
   
+
+ /*====== Footer ======*/
+  .contenedor-padre{
+    display: flex;
+    background-color:var(--light-gray);
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mapa{
+    width:400px;
+    height:auto;
+}
+.texto-design{
+    width: 25%;
+    color: var(--dark-blue);
+    padding-left: 10px;
+    text-decoration: none;
+    
+}
+.texto-design a{
+  color: var(--dark-blue);
+  padding: 10px;
+  text-decoration: none;
+  
+}
+.contacto{
+    width: 25%;
+    color: var(--dark-blue);
+}
+.contacto ul li{
+    list-style-type: none;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    text-align: center;
+}
+.contacto a{
+    text-decoration: none;
+    color: var(--dark-blue)
+    
+}
