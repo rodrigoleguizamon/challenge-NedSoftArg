@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- Include Head -->
-<%- include('views/partials/head', {title: 'Inicio'}) %>
+<%- include('partials/head', {title: 'Inicio'}) %>
 <body>
-	<%- include('views/partials/header')%>
+	<%- include('partials/header')%>
 	<!-- ultima visita -->
 	<div class="container products-wrapper">
 		<div class="row">
@@ -12,7 +12,7 @@
 			</div>
 			<!-- Show the "visited" products -->
 			<% visited.forEach(function (product) { %>
-				<%- include('views/partials/item', {product: product}) %>
+				<%- include('partials/item', {product: product}) %>
 			<% }) %>
 		</div>
 	</div>
@@ -26,7 +26,7 @@
 			</div>
 			<!-- Show the "in-sale" products -->
 			<% inSale.forEach(function (product) { %>
-				<%- include('views/partials/item', {product: product}) %>
+				<%- include('partials/item', {product: product}) %>
 			<% }) %>
 		</div>
 	</div>
